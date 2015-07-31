@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <title>formValid-DEMO</title>
+    </head>
+    <body>
+
+    <form id="validForm">
+       <div class="form-group">
+           <label class="form-label">普通textInput</label> 
+           <div class="form-controls">
+               <div class="form-text-control" data-valid="textRequired length" data-length="10">
+                   <input type="text" class="form-text-input" /> 
+               </div>
+           </div>
+       </div>
+       <div class="form-group">
+           <label class="form-label">地区</label> 
+           <div class="form-controls">
+                   <select>
+                       <option>请选择</option>
+                   </select>
+               </div>
+                   <textarea></textarea>
+               </div>
+           </div>
+       </div>
+    </form>
+    <a id="submitBtn" href="###">click me</a>
+
+
+    <br/>
+    <br/>
+    <br/>
+    <form id="validForm2">
+       <div class="form-group">
+           <label class="form-label">姓名</label> 
+           <div class="form-controls">
+               <div class="form-text-control" data-valid="textRequired">
+                   <input class="form-text-input" /> 
+               </div>
+           </div>
+       </div>
+       <div class="form-group">
+           <label class="form-label">地区</label> 
+           <div class="form-controls">
+               <div class="form-select-control">
+                   <select>
+                       <option>请选择</option>
+                   </select>
+               </div>
+               <div class="form-textarea-control">
+                   <textarea></textarea>
+               </div>
+           </div>
+       </div>
+    </form>
+    <a id="submitBtn2" href="###">click me2</a>
+    <br/>
+    <br/>
+    <br/>
+   <div id="singleFormControl" class="form-text-control">
+       <input class="form-text-input" /> 
+   </div>
+
+
+    <script src="http://cdn.bootcss.com/zepto/1.1.6/zepto.min.js"></script>
+    <!--
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    -->
+    <script src="../../src/formValid.js"></script>
+    </body>
+</html>

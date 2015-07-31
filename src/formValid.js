@@ -107,6 +107,7 @@ $(function() {
         //保证一个input-group只有一个验证判断
         //可以是fieldset,也可以是整一个form, 也可以是单个input-group
         $self = $(this);
+        console.log($self);
 
         //当是form或者filedset等有多个input的时候
         if($self.is('[data-valid]')) {
@@ -114,6 +115,7 @@ $(function() {
         }
         else {
             $formControls = $self.find('[data-valid]');
+            console.log($formControls);
         }
 
         var validForm = {};
@@ -136,7 +138,20 @@ $(function() {
 });
 
 $(document).ready(function(){
-    $goodsForm.valid()
+    //$('#singleFormControl').valid();
+
+    $('#submitBtn').on('click', function(){
+        $('#validForm').valid();
+        console.log($('#validForm'));
+        return false;
+    });
+    
+    $('#submitBtn2').on('click', function(){
+
+        console.log('valid form 2');
+        $('#validForm2').valid();
+        return false;
+    });
 });
 
 
